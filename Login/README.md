@@ -50,23 +50,23 @@ sudo make clean install
 To download the script run the command line:
 
 ``` bash
-git clone --depth 1 https://github.com/Mohammed-Alnahdi/Sucless-Useful-Scripts/tree/main/Login ~/.config/Login
+git clone https://github.com/Mohammed-Alnahdi/Sucless-Useful-Scripts.git 
 ```
 
 ### Then give _login.sh_ the executable mode 
 
 ``` bash
-chmod +x .config/Login/login.sh
+chmod +x login.sh
 ```
 
 ### Edit DWM Config File
 Go to dwm source and edit _config.def.h_ by adding in top: 
 
 ``` cpp-objdump
-static const char *loginctl[] = {"/home/username/.config/Login/login.sh", NULL};
+static const char *loginctl[] = {"/Your/Path/login.sh", NULL};
 ```
 **Note**
-username in path is user home directory that exsist _login.sh_.
+Just put the path of _login.sh_.
 
 ### Add keybinding for shortcut:
 

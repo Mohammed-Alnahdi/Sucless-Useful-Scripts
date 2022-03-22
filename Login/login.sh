@@ -1,4 +1,6 @@
 #!/bin/sh
+#This Application will help you to Reboot and Shutdown
+#Mohammed K Alnahdi; mohammed.alnahdi1991@gmail.com
 
 choise=$(echo "Shutdown\nReboot\nLogout" | dmenu -i -c -l 3 -p "Choose Prosodure: ")
 

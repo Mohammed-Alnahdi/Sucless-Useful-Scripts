@@ -60,24 +60,24 @@ sudo pacman -S ntfs-3g
 ### Download The Script
 
 ``` bash
-git clone --depth 1 https://github.com/Mohammed-Alnahdi/Sucless-Useful-Scripts/tree/main/USB-plugin ~/.config/USB-plugin
+git clone https://github.com/Mohammed-Alnahdi/Sucless-Useful-Scripts.git 
 ```
 
 
 ### Then give _usb-plugin.sh_ the executable mode 
 
 ``` bash
-chmod +x .config/USB-plugin/usb-plugin.sh
+chmod +x usb-plugin.sh
 ```
 
 ### Edit Config file DWM 
 
 ``` cpp-objdump
-static const char *mountctl[] = {"/home/username/.config/script/usb-plugin.sh", NULL};
+static const char *mountctl[] = {"/Your/PATH/usb-plugin.sh", NULL};
 ```
 
 **Note**
-username in path is user home directory that exsist _usb-plugin.sh_.
+Just put the path of _usb-plugin.sh_.
 
 ### Then Adding Keybinding 
 
